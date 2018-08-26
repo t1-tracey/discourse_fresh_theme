@@ -1,3 +1,43 @@
+$theme_gradient: linear-gradient(to left, #02bd3a, #00bb78, #00b6a4, #00aebe, #04a3c4);
+
 body {
-  background: #fafafa;
+  // background: #fafafa;
+}
+
+
+.topic-post {
+  .topic-avatar {
+    float: none;
+    padding: 5px;
+    background: white;
+    margin-bottom: -42px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+
+  }
+
+  .topic-body {
+    width: 735px;
+    background: white;
+    margin-bottom: 20px;
+    border: 1px solid #eeeeee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 7px 10px #cecece;
+
+    .topic-meta-data {
+      color: white;
+      padding: 5px 15px 5px 75px;
+      margin: -12px -12px 10px -12px;
+      background-image: $theme_gradient;
+    }
+  }
+
+  .names span a,
+  .names .fa ,
+  .topic-meta-data .post-info a {
+    color: white;
+  }
+
 }
