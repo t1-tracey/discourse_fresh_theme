@@ -1,5 +1,13 @@
 $theme_gradient: linear-gradient(to left, #02bd3a, #00bb78, #00b6a4, #00aebe, #04a3c4);
 
+@mixin fa-replacement{
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   // background: #fafafa;
 }
@@ -40,4 +48,181 @@ body {
     color: white;
   }
 
+}
+
+.topic-list {
+  display: block;
+
+  tr, td, th, tbody, thead {
+    display: block;
+  }
+
+  .topic-list-item { display: flex; }
+
+  tbody {
+    border: none;
+  }
+
+}
+
+.topic-list thead  {
+  margin-bottom: 2px;
+
+  tr {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .default {
+    order: 0;
+    flex-grow: 2;
+  }
+
+  .category {
+    display: none;
+    align-self: flex-start;
+  }
+
+  .posters {
+    order: 2;
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .posts {
+    order: 3;
+    align-self: flex-end;
+  }
+
+  .views {
+    order: 4;
+    align-self: flex-end;
+  }
+
+  .activity {
+    order: 5;
+    align-self: flex-end;
+    width: 70px;
+  }
+}
+
+.topic-list-item {
+  display: flex;
+  width: 100%;
+  border: 2px #eeeeee solid;
+  border-top: none;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  .topic-list tbody &.last-visit {
+    border-bottom: 2px #eeeeee solid;
+    margin-bottom: 18px;
+  }
+
+  td {
+    display: block;
+    align-self: center;
+    order: 1;
+  }
+
+  &::before {
+    display: block;
+    background: $theme_gradient;
+    content: '';
+    height: 5px;
+    width: calc(100% + 4px);
+  }
+
+  .main-link {
+    order: 6;
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 15px;
+
+    &:first-of-type {
+      padding-left: 30px;
+    }
+
+    a.title {
+      padding: 0;
+    }
+  }
+
+  .category {
+    display: block;
+    order: 0;
+    padding: 0;
+    flex-grow: 2;
+
+    .badge-wrapper {
+      padding-left: 7px
+    }
+  }
+
+  .num {
+    padding: 5px;
+    align-self: flex-end;
+  }
+
+  .posts {
+    order: 3;
+
+    &.num a {
+      padding: 0;
+    }
+
+    &::before {
+      @include fa-replacement;
+      content: "\f086";
+    }
+  }
+
+  .activity {
+    order: 5;
+    &::before {
+      @include fa-replacement;
+      content: "\f017";
+    }
+    width: 70px;
+  }
+
+  .views {
+    order: 4;
+    &::before {
+      @include fa-replacement;
+      content: "\f06e";
+    }
+
+    .number {
+      padding: 0 5px;
+    }
+  }
+
+  .posters {
+    align-self: flex-end;
+    padding: 5px;
+    order: 2;
+    text-align: right;
+
+    .topic-list & {
+      height: auto;
+    }
+
+    a {
+      float: none;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.topic-list-item-separator {
+  display: block;
+  margin-bottom: 10px;
 }
