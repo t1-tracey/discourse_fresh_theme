@@ -20,10 +20,39 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
   border-radius: 5px;
   border: 2px solid #eeeeee;
+  color: #919191;
 
   &:hover {
     background: #eeeeee;
-    color: initial;
+    color: #222;
+  }
+
+  .select-kit.dropdown-select-box &.dropdown-select-box-header {
+    border: 2px solid #eeeeee;
+  }
+}
+
+.combo-box-header {
+  .list-controls .combo-box & {
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #eeeeee;
+    color: #919191;
+
+    &:hover {
+      background: #eeeeee;
+      color: #222;
+    }
+  }
+
+  .select-kit.combo-box.category-drop & {
+    padding: 6px 12px;
+  }
+}
+
+.d-icon {
+  .select-kit.dropdown-select-box:hover .dropdown-select-box-header & {
+    color: #222;
   }
 }
 
