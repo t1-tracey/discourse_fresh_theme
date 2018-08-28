@@ -9,9 +9,38 @@ $theme_gradient: linear-gradient(to left, #02bd3a, #00bb78, #00b6a4, #00aebe, #0
 }
 
 body {
-  // background: #fafafa;
+  background: #fafafa;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #0D7191;
+}
+
+.d-header {
+  background: $theme_gradient;
+}
+
+.btn {
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+
+  &:hover {
+    background: #eeeeee;
+    color: initial;
+  }
+}
+
+.badge-wrapper.bullet span.badge-category {
+  color: #40a4c4;
+}
+
+.list-container {
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+  background: white;
+  padding: 10px;
+}
 
 .topic-post {
   .topic-avatar {
@@ -108,7 +137,7 @@ body {
 }
 
 .topic-list-item {
-  display: flex;
+  background: white;
   width: 100%;
   border: 2px #eeeeee solid;
   border-top: none;
@@ -139,15 +168,15 @@ body {
   .main-link {
     order: 6;
     width: 100%;
-    padding: 5px;
-    padding-bottom: 15px;
+    padding: 0;
 
     &:first-of-type {
       padding-left: 30px;
     }
 
     a.title {
-      padding: 0;
+      display: block;
+      padding: 5px 30px 10px 0px;
     }
   }
 
