@@ -16,10 +16,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #0D7191;
 }
 
-.d-header {
-  background: $theme_gradient;
-}
-
 .btn {
   background: white;
   border-radius: 5px;
@@ -33,6 +29,45 @@ h1, h2, h3, h4, h5, h6 {
 
 .badge-wrapper.bullet span.badge-category {
   color: #40a4c4;
+}
+
+.d-header {
+  background: $theme_gradient;
+
+  .header-dropdown-toggle {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      border-radius: 5px;
+      border: 2px solid transparent;
+      color: white;
+      opacity: 0.5;
+
+      &:hover {
+        border: 2px solid white;
+        background: initial;
+        color: white;
+        opacity: 0.7;
+      }
+
+      .d-icon {
+        opacity: 1;
+      }
+    }
+
+    &.active {
+      a {
+        border: 2px solid white;
+        background: initial;
+        color: white;
+        opacity: 0.9;
+      }
+    }
+  }
 }
 
 .list-container {
