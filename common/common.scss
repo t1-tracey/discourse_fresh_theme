@@ -1,4 +1,4 @@
-$theme_gradient: linear-gradient(to left, #02bd3a, #00bb78, #00b6a4, #00aebe, #04a3c4);
+$theme_gradient: linear-gradient(315deg, #02bd3a, #00bb78, #00b6a4, #00aebe, #04a3c4);
 
 @mixin fa-replacement{
   font: normal normal normal 14px/1 FontAwesome;
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-right: 0;
     }
 
-    a {
+    .icon {
       border-radius: 5px;
       border: 2px solid transparent;
       color: white;
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     &.active {
-      a {
+      .icon {
         border: 2px solid white;
         background: initial;
         color: white;
@@ -104,6 +104,27 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #eeeeee;
   background: white;
   padding: 10px;
+}
+
+.nav-pills {
+  li a {
+    border-radius: 5px;
+
+    &:hover {
+      background: $theme_gradient;
+      color: white;
+      opacity: 0.5;
+    }
+  }
+
+  li.active a {
+    background: $theme_gradient;
+    color: white;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .topic-post {
