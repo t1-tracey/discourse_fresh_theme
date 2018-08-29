@@ -27,6 +27,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #222;
   }
 
+  .bulk-select-topics & {
+    padding: 0px 12px;
+    line-height: 1;
+  }
+
   .select-kit.dropdown-select-box &.dropdown-select-box-header {
     border: 2px solid #eeeeee;
   }
@@ -257,6 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 
     &:first-of-type {
       padding-left: 30px;
+      border-left: none;
     }
 
     a.title {
@@ -265,14 +271,40 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
+  td.bulk-select{
+    order: 0;
+    padding: 0;
+    padding-left: 5px;
+    align-self: flex-start;
+
+    &+.main-link {
+      padding-left: 30px;
+    }
+
+    &~.category {
+      .badge-category-bg {
+        display: none;
+      }
+    }
+  }
+
   .category {
     display: block;
     order: 0;
     padding: 0;
     flex-grow: 2;
+    align-self: flex-start;
 
     .badge-wrapper {
-      padding-left: 7px
+      padding-left: 7px;
+
+      .badge-category-bg {
+        margin-top: 2px;
+        width: 10px;
+        height: 10px;
+        margin-right: 8px;
+        border-radius: 3px;
+      }
     }
   }
 
