@@ -372,3 +372,75 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin-bottom: 10px;
 }
+
+.fps-result {
+  display: block;
+  background: white;
+  border: 2px solid #eeeeee;
+  border-radius: 5px;
+  box-shadow: 1px 7px 10px #cecece;
+  position: relative;
+  padding: 10px;
+  padding-top: 30px;
+
+  &:before {
+    content: '';
+    display: block;
+    height: 20px;
+    background: $theme_gradient;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -1px;
+  }
+
+  .badge-wrapper {
+    top: 25px;
+    right: 0px;
+    color: white;
+  }
+
+  .author{
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+
+    .avatar {
+      margin: 0;
+      padding: 5px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+
+  .topic {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  a.search-link {
+    .topic-title {
+      color: #04a3c4;
+    }
+
+    &:visited .topic-title,
+    &:hover .topic-title {
+      color: #0D7191;
+    }
+  }
+
+  .blurb {
+    .date {
+      margin-right: 5px;
+      font-weight: bold;
+      color: #04a3c4;
+    }
+
+    .search-highlight {
+      color: #00bb78;
+    }
+  }
+}
