@@ -169,6 +169,10 @@ h1, h2, h3, h4, h5, h6 {
       margin: -12px -12px 10px -12px;
       background-image: $theme_gradient;
     }
+
+    @media (max-width: 775px) {
+      width: 100%;
+    }
   }
 
   .names span a,
