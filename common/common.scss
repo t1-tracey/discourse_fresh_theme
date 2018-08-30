@@ -528,3 +528,31 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
   }
 }
+
+.category-list {
+  thead {
+    background: $theme_gradient;
+
+    .category {
+      color: white;
+      padding-left: 10px;
+    }
+    .category, .topics {
+      color: white;
+      padding-right: 10px;
+    }
+  }
+  tbody {
+    background: white
+  }
+}
+
+.latest-topic-list {
+  background: white;
+
+  .table-heading {
+    background: $theme_gradient;
+    color: white;
+    padding-left: 10px;
+  }
+}
