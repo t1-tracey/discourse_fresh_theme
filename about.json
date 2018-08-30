@@ -1,9 +1,5 @@
 {
-  "name": "abs",
-  "about_url": "URL",
-  "license_url": "URL",
-  "assets": {
-  },
-  "color_schemes": {
-  }
+  "name": "Fresh Theme",
+  "about_url": "https://github.com/Molszew/discourse_fresh_theme",
+  "license_url": "https://github.com/Molszew/discourse_fresh_theme/blob/master/LICENSE"
 }
