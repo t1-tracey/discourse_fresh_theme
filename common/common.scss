@@ -261,13 +261,23 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 
     &:first-of-type {
-      padding-left: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
       border-left: none;
     }
 
     a.title {
       display: block;
       padding: 5px 30px 10px 0px;
+    }
+
+    .topic-excerpt {
+      border-top: 1px solid #eeeeee;
+      margin-top: -5px;
+      padding: 5px;
+      font-style: italic;
+      color: lighten(#646464, 0.1);
+      font-size: .8em
     }
   }
 
