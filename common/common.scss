@@ -556,3 +556,13 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 10px;
   }
 }
+
+.timeline-container .topic-timeline {
+  .timeline-handle {
+    background: $theme_gradient;
+  }
+
+  .timeline-scrollarea {
+    border-color: #50b6a7;
+  }
+}
