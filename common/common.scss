@@ -68,6 +68,16 @@ h1, h2, h3, h4, h5, h6 {
 .d-header {
   background: $theme_gradient;
 
+  .btn {
+    color: white;
+    background: transparent;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
   .header-dropdown-toggle {
     margin-right: 5px;
 
