@@ -112,6 +112,14 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+
+  .title-wrapper {
+    opacity: 0.7;
+
+    .topic-link, .d-icon, .category-name {
+      color: white;
+    }
+  }
 }
 
 .list-container {
