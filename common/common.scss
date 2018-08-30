@@ -395,6 +395,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .badge-wrapper {
+    position: absolute;
     top: 25px;
     right: 0px;
     color: white;
@@ -442,5 +443,38 @@ h1, h2, h3, h4, h5, h6 {
     .search-highlight {
       color: #00bb78;
     }
+  }
+}
+
+.search-container {
+  .search-advanced-sidebar {
+    .search-advanced-title {
+      background: $theme_gradient;
+      color: white;
+    }
+
+    .search-advanced-filters {
+      background: white;
+      border: 2px solid #eeeeee;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top: 0;
+      box-shadow: 1px 7px 10px #cecece;
+
+      input, .select-kit-header  {
+        border: 2px solid #eeeeee;
+        border-radius: 5px;
+      }
+
+      div.ac-wrap {
+        border: none;
+      }
+    }
+  }
+
+  input,
+  .select-kit.combo-box .select-kit-header  {
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
   }
 }
