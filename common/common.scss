@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .bulk-select-topics & {
-    padding: 0px 12px;
     line-height: 1;
   }
 
@@ -122,13 +121,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.list-container {
-  border-radius: 5px;
-  border: 2px solid #eeeeee;
-  background: white;
-  padding: 10px;
-}
-
 .nav-pills {
   li a {
     border-radius: 5px;
@@ -194,7 +186,9 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 
-  .topic-list-item { display: flex; }
+  .topic-list-item {
+    display: flex;
+  }
 
   tbody {
     border: none;
@@ -214,33 +208,41 @@ h1, h2, h3, h4, h5, h6 {
   .default {
     order: 0;
     flex-grow: 2;
+    line-height: 2.2;
   }
 
   .category {
     display: none;
-    align-self: flex-start;
   }
 
   .posters {
     order: 2;
     align-self: flex-end;
     text-align: right;
+    line-height: 2.2;
   }
 
   .posts {
     order: 3;
     align-self: flex-end;
+    line-height: 2.2;
   }
 
   .views {
     order: 4;
     align-self: flex-end;
+    line-height: 2.2;
   }
 
   .activity {
     order: 5;
     align-self: flex-end;
+    line-height: 2.2;
     width: 70px;
+  }
+
+  .bulk-select {
+    line-height: 2.2;
   }
 }
 
@@ -253,6 +255,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 3px;
   flex-flow: row wrap;
   justify-content: flex-end;
+  box-shadow: 1px 7px 10px #cecece;
+  margin-bottom: 7px;
+  position: relative;
 
   .topic-list tbody &.last-visit {
     border-bottom: 2px #eeeeee solid;
@@ -271,6 +276,19 @@ h1, h2, h3, h4, h5, h6 {
     content: '';
     height: 5px;
     width: calc(100% + 4px);
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    top: 9px;
+    left: 6px;
+    z-index: 1;
   }
 
   .main-link {
@@ -304,9 +322,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     padding-left: 5px;
     align-self: flex-start;
+    position: relative;
+    z-index: 2;
 
     &+.main-link {
-      padding-left: 30px;
+      padding-left: 20px;
     }
 
     &~.category {
@@ -325,6 +345,8 @@ h1, h2, h3, h4, h5, h6 {
 
     .badge-wrapper {
       padding-left: 7px;
+      position: relative;
+      z-index: 2;
 
       .badge-category-bg {
         margin-top: 2px;
