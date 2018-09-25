@@ -299,6 +299,8 @@ h1, h2, h3, h4, h5, h6 {
     order: 6;
     width: 100%;
     padding: 0;
+    margin-top: -35px;
+    z-index: 1;
 
     &:first-of-type {
       padding-left: 20px;
@@ -318,6 +320,15 @@ h1, h2, h3, h4, h5, h6 {
       font-style: italic;
       color: lighten(#646464, 0.1);
       font-size: .8em
+    }
+
+    .link-top-line {
+      display: block;
+
+      a {
+        display: block;
+        padding-top: 35px;
+      }
     }
   }
 
@@ -365,6 +376,7 @@ h1, h2, h3, h4, h5, h6 {
   .num {
     padding: 5px;
     align-self: flex-end;
+    z-index: 2;
   }
 
   .posts {
@@ -387,6 +399,7 @@ h1, h2, h3, h4, h5, h6 {
       content: "\f017";
     }
     width: 70px;
+    z-index: 2;
   }
 
   .views {
@@ -406,6 +419,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5px;
     order: 2;
     text-align: right;
+    z-index: 2;
 
     .topic-list & {
       height: auto;
